@@ -1,14 +1,14 @@
-import * as React from 'react';
-import { Container, Paper, Typography, Stack, TextField, Button, Box, InputAdornment, IconButton } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Box, Button, Container, IconButton, InputAdornment, Paper, Stack, TextField, Typography } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
+import { useFormik } from 'formik';
+import * as yup from 'yup';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from '../store/hooks';
+import { authActions } from '../store/modules/auth/duck';
 
 const styles = {
-    page: {
-        minHeight: 'calc(100vh - 65px)',
-        display: 'flex',
-        alignItems: 'center'
-    },
+    page: { minHeight: 'calc(100vh - 65px)', display: 'flex', alignItems: 'center' },
     card: {
         p: { xs: 2.5, md: 3.5 },
         borderRadius: 3,
@@ -20,32 +20,32 @@ const styles = {
     button: { borderRadius: 2, py: 1.2, fontWeight: 900 }
 };
 
-const isEmailValid = (value: string) => /^\S+@\S+\.\S+$/.test(value);
+const schema = yup.object({
+    email: yup.string().email('Please enter a valid email').required('Email is required'),
+    password: yup.string().min(3, 'Min 3 chars').required('Password is required')
+});
 
 export const LoginPage: React.FC = () => {
-    const [email, setEmail] = React.useState('');
-    const [password, setPassword] = React.useState('');
-    const [touched, setTouched] = React.useState(false);
     const [showPassword, setShowPassword] = React.useState(false);
 
+    const location = useLocation();
+    const from = (location.state as { from?: string } | null)?.from || '/catalog';
+
+    const dispatch = useAppDispatch();
     const navigate = useNavigate();
+    const { isAuthenticated, isLoading, error } = useAppSelector((s) => s.auth);
 
-    const emailError = touched && email.length > 0 && !isEmailValid(email);
-    const canSubmit = email.trim().length > 0 && password.trim().length > 0 && !emailError;
+    useEffect(() => {
+        if (isAuthenticated) navigate(from, { replace: true });
+    }, [isAuthenticated, navigate, from]);
 
-    const handleSubmit = (event: React.FormEvent) => {
-        event.preventDefault();
-
-        setTouched(true);
-
-        if (!canSubmit) return;
-
-        navigate('/catalog');
-    };
-
-    const handleTogglePasswordVisibility = () => {
-        setShowPassword((prev) => !prev);
-    };
+    const formik = useFormik({
+        initialValues: { email: '', password: '' },
+        validationSchema: schema,
+        onSubmit: (values) => {
+            dispatch(authActions.loginRequest(values));
+        }
+    });
 
     return (
         <Box sx={styles.page}>
@@ -56,28 +56,38 @@ export const LoginPage: React.FC = () => {
                     </Typography>
 
                     <Typography variant='body2' color='text.secondary' sx={{ mb: 2 }}>
-                        Use any credentials — demo UI (no API).
+                        Use any credentials — demo UI (login via saga).
                     </Typography>
 
-                    <Box component='form' onSubmit={handleSubmit}>
+                    {error && (
+                        <Typography variant='body2' color='error' sx={{ mb: 1 }}>
+                            {error}
+                        </Typography>
+                    )}
+
+                    <Box component='form' onSubmit={formik.handleSubmit}>
                         <Stack spacing={2}>
                             <TextField
                                 label='Email'
-                                type='email'
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                onBlur={() => setTouched(true)}
-                                error={emailError}
-                                helperText={emailError ? 'Please enter a valid email' : ' '}
+                                name='email'
+                                value={formik.values.email}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                error={formik.touched.email && Boolean(formik.errors.email)}
+                                helperText={formik.touched.email ? formik.errors.email : ' '}
                                 fullWidth
                                 autoComplete='email'
                             />
 
                             <TextField
                                 label='Password'
+                                name='password'
                                 type={showPassword ? 'text' : 'password'}
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
+                                value={formik.values.password}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                error={formik.touched.password && Boolean(formik.errors.password)}
+                                helperText={formik.touched.password ? formik.errors.password : ' '}
                                 fullWidth
                                 autoComplete='current-password'
                                 slotProps={{
@@ -86,7 +96,7 @@ export const LoginPage: React.FC = () => {
                                             <InputAdornment position='end'>
                                                 <IconButton
                                                     aria-label={showPassword ? 'Hide password' : 'Show password'}
-                                                    onClick={handleTogglePasswordVisibility}
+                                                    onClick={() => setShowPassword((p) => !p)}
                                                     edge='end'
                                                 >
                                                     {showPassword ? <VisibilityOff /> : <Visibility />}
@@ -102,9 +112,9 @@ export const LoginPage: React.FC = () => {
                                 size='large'
                                 type='submit'
                                 sx={styles.button}
-                                disabled={!canSubmit}
+                                disabled={isLoading}
                             >
-                                Sign in
+                                {isLoading ? 'Signing in...' : 'Sign in'}
                             </Button>
                         </Stack>
                     </Box>

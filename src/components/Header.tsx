@@ -12,21 +12,47 @@ import {
     Container
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useMemo, useState, useCallback } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+
+import { useAppDispatch, useAppSelector } from '../store/hooks';
+import { authActions } from '../store/modules/auth/duck';
 
 type NavItem = { label: string; to: string };
-
-const NAV_ITEMS: NavItem[] = [
-    { label: 'Catalog', to: '/catalog' },
-    { label: 'Login', to: '/login' }
-];
 
 export const Header: React.FC = () => {
     const [open, setOpen] = useState(false);
     const { pathname } = useLocation();
+    const navigate = useNavigate();
+
+    const dispatch = useAppDispatch();
+    const isAuth = useAppSelector((s) => s.auth.isAuthenticated);
 
     const closeDrawer = () => setOpen(false);
+
+    const navItems: NavItem[] = useMemo(() => {
+        const base: NavItem[] = [{ label: 'Catalog', to: '/catalog' }];
+
+        if (!isAuth) {
+            return [...base, { label: 'Login', to: '/login' }];
+        }
+
+        return [...base, { label: 'Logout', to: '/logout' }];
+    }, [isAuth]);
+
+    const handleLogout = useCallback(() => {
+        dispatch(authActions.logout());
+        closeDrawer();
+        navigate('/login', { replace: true });
+    }, [dispatch, navigate]);
+
+    const handleNavClick = (to: string) => {
+        if (to === '/logout') {
+            handleLogout();
+            return;
+        }
+        closeDrawer();
+    };
 
     return (
         <>
@@ -98,14 +124,17 @@ export const Header: React.FC = () => {
 
                         {/* Desktop nav */}
                         <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5 }}>
-                            {NAV_ITEMS.map((item) => {
-                                const active = pathname === item.to || pathname.startsWith(item.to + '/');
+                            {navItems.map((item) => {
+                                const isLogout = item.to === '/logout';
+                                const active =
+                                    !isLogout && (pathname === item.to || pathname.startsWith(item.to + '/'));
 
                                 return (
                                     <Button
                                         key={item.to}
-                                        component={Link}
-                                        to={item.to}
+                                        component={isLogout ? 'button' : Link}
+                                        to={isLogout ? undefined : item.to}
+                                        onClick={isLogout ? handleLogout : undefined}
                                         color='inherit'
                                         sx={{
                                             fontWeight: 800,
@@ -138,15 +167,16 @@ export const Header: React.FC = () => {
                 </Box>
 
                 <List>
-                    {NAV_ITEMS.map((item) => {
-                        const active = pathname === item.to || pathname.startsWith(item.to + '/');
+                    {navItems.map((item) => {
+                        const isLogout = item.to === '/logout';
+                        const active = !isLogout && (pathname === item.to || pathname.startsWith(item.to + '/'));
 
                         return (
                             <ListItemButton
                                 key={item.to}
-                                component={Link}
-                                to={item.to}
-                                onClick={closeDrawer}
+                                component={isLogout ? 'button' : Link}
+                                to={isLogout ? undefined : item.to}
+                                onClick={() => handleNavClick(item.to)}
                                 selected={active}
                             >
                                 <ListItemText primary={item.label} />

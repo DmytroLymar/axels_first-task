@@ -1,7 +1,9 @@
 import { Container, Typography, Stack, Grid, Alert } from '@mui/material';
 import { CatalogSceletons } from '../components/CatalogSkeleton';
 import { ProductCard } from '../components/ProductCard';
-import { useProducts } from '../hooks/useProducts';
+import { useAppDispatch, useAppSelector } from '../store/hooks';
+import { useEffect } from 'react';
+import { productsActions } from '../store/modules/products/duck';
 
 const styles = {
     root: { py: { xs: 3, md: 4 } },
@@ -10,7 +12,14 @@ const styles = {
 };
 
 export const CatalogPage: React.FC = () => {
-    const { products, isLoading, error } = useProducts();
+    const dispatch = useAppDispatch();
+    const { items, isLoading, error } = useAppSelector((s) => s.products);
+
+    useEffect(() => {
+        if (items.length === 0) {
+            dispatch(productsActions.fetchProductsRequest());
+        }
+    }, [dispatch, items.length]);
 
     return (
         <Container maxWidth='lg' sx={styles.root}>
@@ -29,7 +38,7 @@ export const CatalogPage: React.FC = () => {
 
             {!isLoading && !error && (
                 <Grid container spacing={2}>
-                    {products.map((p) => (
+                    {items.map((p) => (
                         <Grid key={p.id} size={styles.grid}>
                             <ProductCard product={p} />
                         </Grid>

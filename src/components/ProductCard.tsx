@@ -38,7 +38,7 @@ export const ProductCard: React.FC<Props> = ({ product }) => {
                 '&:hover': { transform: 'translateY(-2px)', boxShadow: 6 }
             }}
         >
-            <Box component={Link} to={`/catalog/${product.id}`} sx={{ textDecoration: 'none', color: 'inherit' }}>
+            <Box component={Link} to={`/products/${product.id}`} sx={{ textDecoration: 'none', color: 'inherit' }}>
                 <CardMedia
                     component='img'
                     image={product.image}
@@ -83,7 +83,7 @@ export const ProductCard: React.FC<Props> = ({ product }) => {
             <Divider />
 
             <CardActions sx={{ justifyContent: 'space-between' }}>
-                <Button component={Link} to={`/catalog/${product.id}`}>
+                <Button component={Link} to={`/products/${product.id}`}>
                     View details
                 </Button>
             </CardActions>
