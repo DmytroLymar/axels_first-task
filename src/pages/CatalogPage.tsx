@@ -1,5 +1,5 @@
 import { Container, Typography, Stack, Grid, Alert } from '@mui/material';
-import { CatalogSceletons } from '../components/CatalogSkeleton';
+import { CatalogSkeleton } from '../components/CatalogSkeleton';
 import { ProductCard } from '../components/ProductCard';
 import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
@@ -32,7 +32,7 @@ export const CatalogPage: React.FC = () => {
                 </Typography>
             </Stack>
 
-            {isLoading && <CatalogSceletons />}
+            {isLoading && <CatalogSkeleton />}
 
             {!isLoading && error && <Alert severity='error'>{error}</Alert>}
 

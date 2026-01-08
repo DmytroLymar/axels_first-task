@@ -1,6 +1,6 @@
 import { Card, CardActions, CardContent, Divider, Grid, Skeleton } from '@mui/material';
 
-export const CatalogSceletons = () => {
+export const CatalogSkeleton = () => {
     return (
         <Grid container spacing={2}>
             {Array.from({ length: 6 }).map((_, i) => (

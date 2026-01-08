@@ -2,7 +2,7 @@ import { Alert, Button, Rating, Stack, TextField, Typography } from '@mui/materi
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
-import { productsActions, selectReviewMeta } from '../redux/ducks/products.duck';
+import { productsActions, selectReviewError, selectReviewSubmitting } from '../redux/ducks/products.duck';
 
 type Props = {
     productId: string;
@@ -13,7 +13,8 @@ export const ReviewSection: React.FC<Props> = ({ productId }) => {
     const navigate = useNavigate();
 
     const isAuth = useAppSelector((s) => s.auth.isAuthenticated);
-    const { reviewSubmitting, reviewError } = useAppSelector(selectReviewMeta);
+    const reviewSubmitting = useAppSelector(selectReviewSubmitting);
+    const reviewError = useAppSelector(selectReviewError);
 
     const [text, setText] = useState('');
     const [rating, setRating] = useState(5);
