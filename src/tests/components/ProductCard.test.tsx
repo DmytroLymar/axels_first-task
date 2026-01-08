@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { screen } from '@testing-library/react';
-import { ProductCard } from './ProductCard';
-import { renderWithProviders } from '../test/testUtils';
+import { ProductCard } from '../../components/ProductCard';
+import { renderWithProviders } from '../testUtils';
 
 const product = {
     id: 'p1',
@@ -12,7 +12,7 @@ const product = {
 };
 
 describe('ProductCard', () => {
-    it('matches snapshot', () => {
+    it('should match a snapshot', () => {
         const { asFragment } = renderWithProviders(<ProductCard product={product} />, {
             route: '/catalog'
         });
@@ -20,10 +20,13 @@ describe('ProductCard', () => {
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it('navigates to product details link', () => {
-        renderWithProviders(<ProductCard product={product} />, { route: '/catalog' });
+    it('should navigate to product details page when clicking View details', () => {
+        renderWithProviders(<ProductCard product={product} />, {
+            route: '/catalog'
+        });
 
         const link = screen.getByRole('link', { name: /view details/i });
+
         expect(link).toHaveAttribute('href', `/products/${product.id}`);
     });
 });

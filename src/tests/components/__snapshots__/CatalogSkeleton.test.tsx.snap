@@ -1,0 +1,547 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CatalogSkeleton > Should match a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-zjhuaj-MuiGrid-root"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-h3cks1-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uqzz15-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-3sr0vz-MuiSkeleton-root"
+          style="height: 180px;"
+        />
+        <div
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 70%; height: 28px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 100%;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 85%;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        />
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-9t71gs-MuiCardActions-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 90px; height: 32px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 60px; height: 32px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-h3cks1-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uqzz15-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-3sr0vz-MuiSkeleton-root"
+          style="height: 180px;"
+        />
+        <div
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 70%; height: 28px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 100%;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 85%;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        />
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-9t71gs-MuiCardActions-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 90px; height: 32px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 60px; height: 32px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-h3cks1-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uqzz15-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-3sr0vz-MuiSkeleton-root"
+          style="height: 180px;"
+        />
+        <div
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 70%; height: 28px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 100%;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 85%;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        />
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-9t71gs-MuiCardActions-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 90px; height: 32px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 60px; height: 32px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-h3cks1-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uqzz15-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-3sr0vz-MuiSkeleton-root"
+          style="height: 180px;"
+        />
+        <div
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 70%; height: 28px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 100%;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 85%;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        />
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-9t71gs-MuiCardActions-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 90px; height: 32px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 60px; height: 32px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-h3cks1-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uqzz15-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-3sr0vz-MuiSkeleton-root"
+          style="height: 180px;"
+        />
+        <div
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 70%; height: 28px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 100%;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 85%;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        />
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-9t71gs-MuiCardActions-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 90px; height: 32px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 60px; height: 32px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-h3cks1-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uqzz15-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-3sr0vz-MuiSkeleton-root"
+          style="height: 180px;"
+        />
+        <div
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 70%; height: 28px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 100%;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 85%;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        />
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-9t71gs-MuiCardActions-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 90px; height: 32px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 60px; height: 32px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CatalogSkeleton > should match a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-zjhuaj-MuiGrid-root"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-h3cks1-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uqzz15-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-3sr0vz-MuiSkeleton-root"
+          style="height: 180px;"
+        />
+        <div
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 70%; height: 28px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 100%;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 85%;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        />
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-9t71gs-MuiCardActions-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 90px; height: 32px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 60px; height: 32px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-h3cks1-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uqzz15-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-3sr0vz-MuiSkeleton-root"
+          style="height: 180px;"
+        />
+        <div
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 70%; height: 28px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 100%;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 85%;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        />
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-9t71gs-MuiCardActions-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 90px; height: 32px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 60px; height: 32px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-h3cks1-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uqzz15-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-3sr0vz-MuiSkeleton-root"
+          style="height: 180px;"
+        />
+        <div
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 70%; height: 28px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 100%;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 85%;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        />
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-9t71gs-MuiCardActions-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 90px; height: 32px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 60px; height: 32px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-h3cks1-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uqzz15-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-3sr0vz-MuiSkeleton-root"
+          style="height: 180px;"
+        />
+        <div
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 70%; height: 28px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 100%;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 85%;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        />
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-9t71gs-MuiCardActions-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 90px; height: 32px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 60px; height: 32px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-h3cks1-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uqzz15-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-3sr0vz-MuiSkeleton-root"
+          style="height: 180px;"
+        />
+        <div
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 70%; height: 28px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 100%;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 85%;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        />
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-9t71gs-MuiCardActions-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 90px; height: 32px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 60px; height: 32px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 css-h3cks1-MuiGrid-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-uqzz15-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-3sr0vz-MuiSkeleton-root"
+          style="height: 180px;"
+        />
+        <div
+          class="MuiCardContent-root css-1lt5qva-MuiCardContent-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 70%; height: 28px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 100%;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 85%;"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-1jpc804-MuiDivider-root"
+        />
+        <div
+          class="MuiCardActions-root MuiCardActions-spacing css-9t71gs-MuiCardActions-root"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 90px; height: 32px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-kkcbhd-MuiSkeleton-root"
+            style="width: 60px; height: 32px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

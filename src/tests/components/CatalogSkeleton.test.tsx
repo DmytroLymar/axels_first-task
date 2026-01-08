@@ -1,9 +1,9 @@
 import { describe, it, expect } from 'vitest';
-import { CatalogSkeleton } from './CatalogSkeleton';
-import { renderWithProviders } from '../test/testUtils';
+import { CatalogSkeleton } from '../../components/CatalogSkeleton';
+import { renderWithProviders } from '../testUtils';
 
 describe('CatalogSkeleton', () => {
-    it('matches snapshot', () => {
+    it('should match a snapshot', () => {
         const { asFragment } = renderWithProviders(<CatalogSkeleton />);
         expect(asFragment()).toMatchSnapshot();
     });

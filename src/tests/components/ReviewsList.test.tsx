@@ -1,16 +1,22 @@
 import { describe, it, expect } from 'vitest';
 import { screen } from '@testing-library/react';
-import { ReviewsList } from './ReviewsList';
-import { renderWithProviders } from '../test/testUtils';
+import { ReviewsList } from '../../components/ReviewsList';
+import { renderWithProviders } from '../testUtils';
 
 describe('ReviewsList', () => {
-    it('matches snapshot (empty)', () => {
+    it('should match a snapshot when reviews list is empty', () => {
         const { asFragment } = renderWithProviders(<ReviewsList reviews={[]} />);
+
         expect(asFragment()).toMatchSnapshot();
-        expect(screen.getByText(/No reviews yet/i)).toBeInTheDocument();
     });
 
-    it('matches snapshot (with items)', () => {
+    it('should show empty state text when there are no reviews', () => {
+        renderWithProviders(<ReviewsList reviews={[]} />);
+
+        expect(screen.getByText(/no reviews yet/i)).toBeInTheDocument();
+    });
+
+    it('should match a snapshot when reviews list has items', () => {
         const { asFragment } = renderWithProviders(
             <ReviewsList
                 reviews={[
@@ -19,6 +25,7 @@ describe('ReviewsList', () => {
                 ]}
             />
         );
+
         expect(asFragment()).toMatchSnapshot();
     });
 });

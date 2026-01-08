@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Header > matches snapshot (logged in shows Logout) 1`] = `
+exports[`Header > should match a snapshot when logged in 1`] = `
 <DocumentFragment>
   <header
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky css-8sxrvx-MuiPaper-root-MuiAppBar-root"
@@ -71,7 +71,7 @@ exports[`Header > matches snapshot (logged in shows Logout) 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Header > matches snapshot (logged out) 1`] = `
+exports[`Header > should match a snapshot when logged out 1`] = `
 <DocumentFragment>
   <header
     class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky css-8sxrvx-MuiPaper-root-MuiAppBar-root"
