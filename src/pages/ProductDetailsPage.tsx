@@ -14,11 +14,10 @@ import {
 import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getAverageRating } from '../utils/rating';
-import { useAppDispatch, useAppSelector } from '../store/hooks';
-import { productsActions } from '../store/modules/products/duck';
-import { selectProductById, selectProductsMeta } from '../store/modules/products/selectors';
 import { ReviewsList } from '../components/ReviewsList';
 import { ReviewSection } from '../components/ReviewSection';
+import { useAppDispatch, useAppSelector } from '../redux/hooks';
+import { productsActions, selectProductById, selectProductsMeta } from '../redux/ducks/products.duck';
 
 const styles = {
     container: { py: 4 },

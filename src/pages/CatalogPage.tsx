@@ -1,9 +1,9 @@
 import { Container, Typography, Stack, Grid, Alert } from '@mui/material';
 import { CatalogSceletons } from '../components/CatalogSkeleton';
 import { ProductCard } from '../components/ProductCard';
-import { useAppDispatch, useAppSelector } from '../store/hooks';
 import { useEffect } from 'react';
-import { productsActions } from '../store/modules/products/duck';
+import { useAppDispatch, useAppSelector } from '../redux/hooks';
+import { productsActions } from '../redux/ducks/products.duck';
 
 const styles = {
     root: { py: { xs: 3, md: 4 } },

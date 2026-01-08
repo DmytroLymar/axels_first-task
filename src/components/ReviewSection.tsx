@@ -1,9 +1,8 @@
 import { Alert, Button, Rating, Stack, TextField, Typography } from '@mui/material';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAppDispatch, useAppSelector } from '../store/hooks';
-import { selectReviewMeta } from '../store/modules/products/selectors';
-import { productsActions } from '../store/modules/products/duck';
+import { useAppDispatch, useAppSelector } from '../redux/hooks';
+import { productsActions, selectReviewMeta } from '../redux/ducks/products.duck';
 
 type Props = {
     productId: string;

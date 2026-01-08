@@ -4,8 +4,8 @@ import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useAppDispatch, useAppSelector } from '../store/hooks';
-import { authActions } from '../store/modules/auth/duck';
+import { useAppDispatch, useAppSelector } from '../redux/hooks';
+import { authActions } from '../redux/ducks/auth.duck';
 
 const styles = {
     page: { minHeight: 'calc(100vh - 65px)', display: 'flex', alignItems: 'center' },
