@@ -81,10 +81,8 @@ export const selectProductsMeta = (s: RootState) => ({
     error: s.products.error
 });
 
-export const selectReviewMeta = (s: RootState) => ({
-    reviewSubmitting: s.products.reviewSubmitting,
-    reviewError: s.products.reviewError
-});
+export const selectReviewSubmitting = (s: RootState) => s.products.reviewSubmitting;
+export const selectReviewError = (s: RootState) => s.products.reviewError;
 
 export const selectProductById = (id?: string) => (s: RootState) => s.products.items.find((p) => p.id === id) ?? null;
 

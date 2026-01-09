@@ -1,0 +1,144 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header > should match a snapshot when logged in 1`] = `
+<DocumentFragment>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky css-8sxrvx-MuiPaper-root-MuiAppBar-root"
+    style="--Paper-shadow: none;"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-regular css-1vd5vrb-MuiToolbar-root"
+      >
+        <button
+          aria-label="open navigation menu"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-63fk82-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="MenuIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
+            />
+          </svg>
+        </button>
+        <a
+          class="MuiBox-root css-1sfi23f"
+          data-discover="true"
+          href="/catalog"
+        >
+          <img
+            alt="Phone Store logo"
+            class="MuiBox-root css-1wo0u4v"
+            src="/logo.svg"
+          />
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-1cnsni0-MuiTypography-root"
+          >
+            Phone Store
+          </h6>
+        </a>
+        <div
+          class="MuiBox-root css-jcqy6a"
+        >
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-n9z21s-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/catalog"
+            tabindex="0"
+          >
+            Catalog
+          </a>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-lac2hv-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+</DocumentFragment>
+`;
+
+exports[`Header > should match a snapshot when logged out 1`] = `
+<DocumentFragment>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky css-8sxrvx-MuiPaper-root-MuiAppBar-root"
+    style="--Paper-shadow: none;"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-regular css-1vd5vrb-MuiToolbar-root"
+      >
+        <button
+          aria-label="open navigation menu"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-63fk82-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="MenuIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
+            />
+          </svg>
+        </button>
+        <a
+          class="MuiBox-root css-1sfi23f"
+          data-discover="true"
+          href="/catalog"
+        >
+          <img
+            alt="Phone Store logo"
+            class="MuiBox-root css-1wo0u4v"
+            src="/logo.svg"
+          />
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-1cnsni0-MuiTypography-root"
+          >
+            Phone Store
+          </h6>
+        </a>
+        <div
+          class="MuiBox-root css-jcqy6a"
+        >
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-n9z21s-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/catalog"
+            tabindex="0"
+          >
+            Catalog
+          </a>
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-lac2hv-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/login"
+            tabindex="0"
+          >
+            Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+</DocumentFragment>
+`;
