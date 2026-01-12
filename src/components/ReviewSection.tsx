@@ -19,11 +19,11 @@ export const ReviewSection: React.FC<Props> = ({ productId }) => {
     const [text, setText] = useState('');
     const [rating, setRating] = useState(5);
 
-    const from = useMemo(() => `/products/${productId}`, [productId]);
+    const fromURL = useMemo(() => `/products/${productId}`, [productId]);
 
     const goToLogin = useCallback(() => {
-        navigate('/login', { state: { from } });
-    }, [navigate, from]);
+        navigate('/login', { state: { from: fromURL } });
+    }, [navigate, fromURL]);
 
     useEffect(() => {
         if (reviewError && text.trim().length > 0) {
@@ -31,7 +31,7 @@ export const ReviewSection: React.FC<Props> = ({ productId }) => {
         }
     }, [text, reviewError, dispatch]);
 
-    const submit = useCallback(() => {
+    const handleSubmit = useCallback(() => {
         if (!isAuth) return goToLogin();
 
         dispatch(
@@ -79,7 +79,7 @@ export const ReviewSection: React.FC<Props> = ({ productId }) => {
                         <Rating value={rating} onChange={(_, v) => setRating(v ?? 1)} />
                     </Stack>
 
-                    <Button variant='contained' onClick={submit} disabled={reviewSubmitting || !text.trim()}>
+                    <Button variant='contained' onClick={handleSubmit} disabled={reviewSubmitting || !text.trim()}>
                         {reviewSubmitting ? 'Submitting...' : 'Submit review'}
                     </Button>
                 </>

@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
     const dispatch = useAppDispatch();
     const isAuth = useAppSelector((s) => s.auth.isAuthenticated);
 
-    const closeDrawer = () => setOpen(false);
+    const handleCloseDrawer = () => setOpen(false);
 
     const navItems: NavItem[] = useMemo(() => {
         const base: NavItem[] = [{ label: 'Catalog', to: '/catalog' }];
@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
 
     const handleLogout = useCallback(() => {
         dispatch(authActions.logout());
-        closeDrawer();
+        handleCloseDrawer();
         navigate('/login', { replace: true });
     }, [dispatch, navigate]);
 
@@ -50,7 +50,7 @@ export const Header: React.FC = () => {
             handleLogout();
             return;
         }
-        closeDrawer();
+        handleCloseDrawer();
     };
 
     return (
@@ -159,7 +159,7 @@ export const Header: React.FC = () => {
             </AppBar>
 
             {/* Mobile drawer */}
-            <Drawer anchor='left' open={open} onClose={closeDrawer} PaperProps={{ sx: { width: 280 } }}>
+            <Drawer anchor='left' open={open} onClose={handleCloseDrawer} PaperProps={{ sx: { width: 280 } }}>
                 <Box sx={{ p: 2, display: 'flex', alignItems: 'center', gap: 1 }}>
                     <Box component='img' src='/logo.svg' alt='Phone Store logo' sx={{ width: 28, height: 28 }} />
                     <Typography fontWeight={900}>Phone Store</Typography>
